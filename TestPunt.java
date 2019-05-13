@@ -19,4 +19,16 @@ public class TestPunt {
     public static void main(String args[]) {
         org.junit.runner.JUnitCore.main("TestPunt");
     }
+    
+    public void testPuntSetX() {
+        // comprova que el constructor Punt() deixi a 0 els valors
+        Punt p = new Punt();
+        assertEquals(12, p.getX()); // Afi rma que la coordenada x val 0
+    }
+    
+    public void testPuntSetY() {
+    	Punt p = new Punt();
+    	p.setY(13);
+    	assertEquals(13, p.getY());
+    }
 }
