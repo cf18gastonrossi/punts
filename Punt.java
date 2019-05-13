@@ -19,4 +19,5 @@
  		this.y = y;
  		System.out.println("Set y");
  	}
+ 	public void suma(Punt p) { x+=p.x; y+=p.y; }
  }

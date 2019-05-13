@@ -39,4 +39,12 @@ public class TestPunt {
         assertEquals(3, p.getX());
         assertEquals(4, p.getY());
     }
+    
+    @Test
+    public void testPuntSuma() { 
+    	Punt p = new Punt(3, 4);
+    	p.suma(p);
+    	assertEquals(6, p.getX());
+    	assertEquals(8, p.getY());
+    }
 }
