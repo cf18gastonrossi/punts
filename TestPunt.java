@@ -31,4 +31,12 @@ public class TestPunt {
     	p.setY(13);
     	assertEquals(13, p.getY());
     }
+    
+    @Test
+    public void testPuntDefinit() {
+        // comprova que el constructor Punt(int,int) deixi els valors correctes
+        Punt p = new Punt(3, 4);
+        assertEquals(3, p.getX());
+        assertEquals(4, p.getY());
+    }
 }
