@@ -10,8 +10,10 @@ public class TestSegment {
 	
 	@Test
 	public void testSegmentLongitud() {
-		Segment S = new Segment(5,5,5,5);
-		AssertEquals(5.00,S.Longitud(5,5,5,5));
+		Punt p1 = new Punt(3,3);
+		Punt p2 = new Punt(3,3);
+		Segment H = new Segment(p1,p2);
+		AssertEquals(3,H.longitud(p1, p2));
 	}
 
 	private void AssertEquals(double d, double longitud) {
